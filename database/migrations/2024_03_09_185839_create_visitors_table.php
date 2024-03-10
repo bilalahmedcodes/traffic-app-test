@@ -18,7 +18,7 @@ class CreateVisitorsTable extends Migration
             function (Blueprint $table) {
                 $table->id();
                 $table->string('external_id')->unique();
-                $table->string('stage');
+                $table->string('stage')->nullable();
                 $table->timestamps();
             }
         );
